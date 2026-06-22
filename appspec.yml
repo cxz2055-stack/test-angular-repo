@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: dist/my-angular-project
     destination: /var/www/my-angular-project
     overwrite: true
 permissions:
@@ -12,7 +12,7 @@ permissions:
     group: root
     type:
       - file
-      - directorygi
+      - directory
 hooks:
   ApplicationStart:
     - location: deploy-scripts/application-start-hook.sh
