@@ -13,7 +13,7 @@ phases:
       - ng build -c production
       - echo "Build Completed."
     finally:
-      - echo This is the finally block execution!
+      - echo This is thgit e finally block execution!
 artifacts:
   base-directory: dist/my-angular-project
   files:
